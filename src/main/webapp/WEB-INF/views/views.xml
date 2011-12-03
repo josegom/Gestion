@@ -1,0 +1,15 @@
+<!DOCTYPE tiles-definitions PUBLIC
+      "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN"
+      "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+                                                                       
+<tiles-definitions>
+                                                                       
+   <definition name="template" template="/WEB-INF/views/principal.jsp">
+     <put-attribute name="menu" value="/WEB-INF/views/tiles/menu.jsp" />
+   </definition>                                                 
+                                                                 
+   <definition name="tiles/gastos" extends="template" >
+   	 <put-attribute name="title" value="Gastos Jose" />
+     <put-attribute name="contenido" value="/WEB-INF/views/tiles/gastos.jsp" />
+   </definition>
+</tiles-definitions>
