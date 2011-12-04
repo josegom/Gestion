@@ -12,8 +12,7 @@ public class GastosController {
 
 	@RequestMapping({"/gastos.do"})
 	  public String mostrarPaginaGastos(Map<String,Object> model,HttpServletRequest request){
-			System.out.println("Entro en el controlador");
-			
+			System.out.println("Entro en el controlador");	
 			return "tiles/gastos";
 		}
 }

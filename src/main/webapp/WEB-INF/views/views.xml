@@ -5,11 +5,16 @@
 <tiles-definitions>
                                                                        
    <definition name="template" template="/WEB-INF/views/principal.jsp">
-     <put-attribute name="menu" value="/WEB-INF/views/tiles/menu.jsp" />
+     <put-attribute name="menu" value="/WEB-INF/jsp/menu.jsp" />
    </definition>                                                 
                                                                  
    <definition name="tiles/gastos" extends="template" >
    	 <put-attribute name="title" value="Gastos Jose" />
-     <put-attribute name="contenido" value="/WEB-INF/views/tiles/gastos.jsp" />
+     <put-attribute name="contenido" value="/WEB-INF/jsp/gastos.jsp" />
    </definition>
+   
+    <definition name="tiles/aceso" extends="template">
+    <put-attribute name="title" value="Login"/>
+    <put-attribute name="contenido" value="/WEB-INF/jsp/aceso.jsp"/>
+    </definition>
 </tiles-definitions>
